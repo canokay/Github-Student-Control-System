@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
 </head>
 <body>
-
-  <header>
-    <div id="menu">
-      <div id="logo"><img src="img/logo.jpg" height=70px width=260px > </div>
-    </div>
+  <header>     
+      <nav class="navbar navbar-dark github-dark">
+        <div class="container ml-auto mr-auto">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="#" >
+                <i class="fab fa-github fa-lg"></i>
+          GitHub Student Control
+            </a>
+            </div>
+        </div>
+      </nav>
   </header>
-
-  <div id="container">
+   
+<div class="container ml-auto mr-auto">
     <form method="POST" action="add.php">
-      <table border="0" align="center">
-        <tr>
-          <td colspan="2" align="center"> Kayıt Ekleme</td>
-        </tr>
-        <tr>
-          <td>Student Number: </td>
-          <td><input type="text" name="sID"></td>
-        </tr>
-        <tr>
-          <td>Name:</td>
-          <td><input type="text" name="sName"></td>
-        </tr>
-        <tr>
-          <td>Surname:</td>
-          <td><input type="text" name="sSurname"></td>
-        </tr>
-        <tr>
-          <td>Github Username:</td>
-          <td><input type="text" name="githubUserName"></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><input type="submit" value="Save"></td>
-        </tr>
-      </table>
-    </form>
-  </div>
+        <div class="container ml-auto mr-auto">
+        <div class="row ml-auto mr-auto">
+            <div class="col-sm-6 col-md-4 col-md-offset-4 ml-auto mr-auto">
+                <h1 class="text-center login-title">Add Student</h1>
+                <div class="account-wall">
+                    <i class="fab fa-github profile-img fa-6x"></i>
+                    <div class="input-group mb-3">
+                        <input type="text" name="sID" class="form-control" placeholder="Student ID" required autofocus>
+                    </div>
+                    <div class="input-group mb-3">    
+                        <input type="text" name="sName" class="form-control" placeholder="Name" required autofocus>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" name="sSurname" class="form-control" placeholder="Surname" required autofocus>
+                    </div>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                          </div>
 
+                          <input type="text" name="githubUserName" class="form-control" placeholder="Github Username" aria-label="GithuUsername" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                    <input type="text" name="email" class="form-control" placeholder="Email" required autofocus> 
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">
+                        Save</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    </form>
+</div>   
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
